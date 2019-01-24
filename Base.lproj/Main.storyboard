@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="nqa-JD-NOA">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View-->
+        <scene sceneID="Rcd-1l-LaS">
+            <objects>
+                <viewController id="nqa-JD-NOA" customClass="LaunchScreenView" customModule="Schwifty_Slots" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nNH-ar-qff"/>
+                        <viewControllerLayoutGuide type="bottom" id="pO8-zK-tsJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BCN-hl-dlO" customClass="Launch">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by EPHS IOS Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r45-r0-ZjH">
+                                <rect key="frame" x="83" y="199" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kV4-YW-1PL">
+                                <rect key="frame" x="37" y="294" width="301" height="225"/>
+                                <state key="normal" title="Button" image="logo-eagle-tag"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="flipHorizontal" id="cKr-WG-h0i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="r45-r0-ZjH" secondAttribute="trailing" constant="67" id="Cfs-MC-x03"/>
+                            <constraint firstItem="kV4-YW-1PL" firstAttribute="top" secondItem="r45-r0-ZjH" secondAttribute="bottom" constant="74" id="OYy-WF-g73"/>
+                            <constraint firstItem="pO8-zK-tsJ" firstAttribute="top" secondItem="kV4-YW-1PL" secondAttribute="bottom" constant="259" id="cvq-Xp-zHZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kV4-YW-1PL" secondAttribute="trailing" constant="21" id="iDe-tg-iKb"/>
+                            <constraint firstItem="kV4-YW-1PL" firstAttribute="leading" secondItem="BCN-hl-dlO" secondAttribute="leadingMargin" constant="21" id="m9I-wK-FbT"/>
+                            <constraint firstItem="r45-r0-ZjH" firstAttribute="top" secondItem="nNH-ar-qff" secondAttribute="bottom" constant="155" id="tW8-0G-u0F"/>
+                            <constraint firstItem="r45-r0-ZjH" firstAttribute="leading" secondItem="BCN-hl-dlO" secondAttribute="leadingMargin" constant="67" id="tcf-h4-A2Y"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0F-Ez-7vz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-198" y="-231"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Schwifty_Slots" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="blue green" translatesAutoresizingMaskIntoConstraints="NO" id="tsk-fm-DD6">
+                                <rect key="frame" x="0.0" y="0.0" width="601" height="824"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="center" ambiguous="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="58" translatesAutoresizingMaskIntoConstraints="NO" id="Whw-h2-kHN" userLabel="Root Stack">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667.66666666666663"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Schwifty Slots" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaJ-Wv-jlB">
+                                        <rect key="frame" x="47.666666666666657" y="0.0" width="279.66666666666674" height="57.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="50"/>
+                                        <color key="textColor" red="0.67516297053438479" green="0.74176050871084676" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="1kD-Ob-2CG">
+                                        <rect key="frame" x="37" y="115.33333333333333" width="301" height="34.333333333333329"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Money: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fuk-sd-1Xp">
+                                                <rect key="frame" x="0.0" y="0.0" width="100.33333333333333" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10,000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7bJ-EZ-Lho">
+                                                <rect key="frame" x="100.33333333333334" y="0.0" width="100.33333333333334" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bet: $100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oua-kp-Fu1">
+                                                <rect key="frame" x="200.66666666666666" y="0.0" width="100.33333333333334" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="rb3-Sj-BBn" userLabel="Slot Stack">
+                                        <rect key="frame" x="0.0" y="207.66666666666663" width="375" height="256"/>
+                                        <subviews>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon2" translatesAutoresizingMaskIntoConstraints="NO" id="Cgj-cD-RGC" userLabel="Slot1">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="256"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon3" translatesAutoresizingMaskIntoConstraints="NO" id="Ayk-v3-hdz" userLabel="Slot2">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="256"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon5" translatesAutoresizingMaskIntoConstraints="NO" id="9MN-dO-mLc" userLabel="Slot3">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="256"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-65-YtV" userLabel="BetSlot">
+                                        <rect key="frame" x="107.66666666666669" y="521.66666666666663" width="160" height="41"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nBa-lv-Czc">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="41"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <state key="normal" title="$100">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColorfromUIColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                        <color key="value" red="1" green="0.17905352159999999" blue="0.93781868450000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SpinButton100:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZZx-QF-kKs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZj-EP-82n">
+                                                <rect key="frame" x="54.999999999999986" y="0.0" width="50" height="41"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                <state key="normal" title="$250">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColorfromUIColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                        <color key="value" red="1" green="0.17905352159999999" blue="0.93781868450000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SpinButton250:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XrJ-R0-JzQ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zUI-rr-Cvd">
+                                                <rect key="frame" x="110" y="0.0" width="50" height="41"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="25"/>
+                                                <state key="normal" title="$500">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.backgroundColorfromUIColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorFromUIColor">
+                                                        <color key="value" red="1" green="0.17905352159999999" blue="0.93781868450000005" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SpinButton500:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2B2-Gs-Vi8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="h7b-WU-Lzj">
+                                        <rect key="frame" x="159.66666666666666" y="620.66666666666663" width="56" height="47"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QuQ-bF-drl">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="47"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" name="Baskerville" family="Baskerville" pointSize="30"/>
+                                                <state key="normal" title="Spin"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="label.borderWidth">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="label.borderColorFromUIColor">
+                                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="SpinButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ddV-K1-ZNv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1820729105622137" green="0.71889167746113991" blue="0.21038045042416118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tsk-fm-DD6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Dhx-40-IKI"/>
+                            <constraint firstItem="tsk-fm-DD6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="MwV-GP-3n6"/>
+                            <constraint firstItem="Whw-h2-kHN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="dKj-Ok-xkV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="betLabel" destination="Oua-kp-Fu1" id="LEF-yT-fm6"/>
+                        <outlet property="button100" destination="nBa-lv-Czc" id="8j3-3m-BF3"/>
+                        <outlet property="button250" destination="uZj-EP-82n" id="0xg-n7-bYL"/>
+                        <outlet property="button500" destination="zUI-rr-Cvd" id="60Y-vu-UVb"/>
+                        <outlet property="labelMoney" destination="7bJ-EZ-Lho" id="Sph-fH-T98"/>
+                        <outlet property="slotOne" destination="Cgj-cD-RGC" id="wha-Id-pW8"/>
+                        <outlet property="slotThree" destination="9MN-dO-mLc" id="58V-la-55t"/>
+                        <outlet property="slotTwo" destination="Ayk-v3-hdz" id="hVR-IU-9zT"/>
+                        <outlet property="spinButton" destination="QuQ-bF-drl" id="nOg-6o-MKG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-231"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon2" width="256" height="256"/>
+        <image name="Icon3" width="256" height="256"/>
+        <image name="Icon5" width="128" height="128"/>
+        <image name="blue green" width="2560" height="1600"/>
+        <image name="logo-eagle-tag" width="300" height="225"/>
+    </resources>
+</document>
